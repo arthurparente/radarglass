@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS `contato` (
 	`profissao` varchar(150) NOT NULL,
 	`empresa` varchar(150) NOT NULL,
 	`comentario` text NOT NULL,
+	`maladireta` varchar(1) NOT NULL,
 	`id_endereco` int(11) NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (id_endereco) REFERENCES endereco (id_endereco)
